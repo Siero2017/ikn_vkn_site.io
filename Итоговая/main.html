@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Аналитическая геометрия</title>
+    <div class="head">
+        <a href="main.html"><img src="img/torMainImg.gif" alt="home" class="goHome"></a>
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Аналитическая геометрия</h1>
+        
+        <div class="section">
+            <h2>Определение</h2>
+            <p>Аналитическая геометрия - это раздел математики, который изучает геометрические объекты с помощью алгебраических методов.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Основные понятия</h2>
+            <ul>
+                <li><a href="body/dec.html">Декартова система координат</a></li>
+                <li><a href="body/equationOfLine.html">Уравнение прямой</a></li>
+                <li><a href="body/equationOfCircle.html">Уравнение окружности</a></li>
+                <li><a href="body/planeEquation.html">Уравнение плоскости</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Примеры задач</h2>
+            <p><a href="docs/Примеры задач.docx">Примеры задач и решений</a> в аналитической геометрии:</p>
+            <ul>
+                <li>Найти точку пересечения двух прямых</li>
+                <li>Найти расстояние между двумя точками</li>
+                <li>Найти угол между двумя прямыми</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Онлайн калькулятор</h2>
+            <ol>
+                <li>
+                    Скалярное произведение векторов: 
+                        <p>
+                            a = 
+                            <input id="dot1" type="number" size="1px" value="1"> 
+                            <input id="dot2" type="number" size="1px" value="2">
+                            <input id="dot3" type="number" size="1px" value="-5">
+                        </p>
+                        <p>
+                            b = 
+                            <input id="dot4" type="number" size="1px" value="4"> 
+                            <input id="dot5" type="number" size="1px" value="8">
+                            <input id="dot6" type="number" size="1px" value="1">
+                        </p>
+                    <button type="button" onclick="dot([getE('dot1'), getE('dot2'), getE('dot3')], [getE('dot4'), getE('dot5'), getE('dot6')]);">Вычислить</button> 
+                    <input id="resDot" value="" readonly size="1px">
+                </li>
+                <li>
+                    Векторное произведение векторов:
+                        <p>
+                            a = 
+                            <input id="cross1" type="number" size="1px" value="1"> 
+                            <input id="cross2" type="number" size="1px" value="2">
+                            <input id="cross3" type="number" size="1px" value="3">
+                        </p>
+                        <p>
+                            b = 
+                            <input id="cross4" type="number" size="1px" value="2"> 
+                            <input id="cross5" type="number" size="1px" value="1">
+                            <input id="cross6" type="number" size="1px" value="-2">
+                        </p>
+                    <button type="button" onclick="cross([getE('cross1'), getE('cross2'), getE('cross3')], [getE('cross4'), getE('cross5'), getE('cross6')]);">Вычислить</button> 
+                    <input id="resCross" value="" readonly size="3px">
+                </li>
+                <li>
+                    Смешанное произведение векторов: 
+                    <p>
+                        a = 
+                        <input id="tripleProduct1" type="number" size="1px" value="1"> 
+                        <input id="tripleProduct2" type="number" size="1px" value="2">
+                        <input id="tripleProduct3" type="number" size="1px" value="3">
+                    </p>
+                    <p>
+                        b = 
+                        <input id="tripleProduct4" type="number" size="1px" value="1"> 
+                        <input id="tripleProduct5" type="number" size="1px" value="1">
+                        <input id="tripleProduct6" type="number" size="1px" value="1">
+                    </p>
+                    <p>
+                        c = 
+                        <input id="tripleProduct7" type="number" size="1px" value="1"> 
+                        <input id="tripleProduct8" type="number" size="1px" value="2">
+                        <input id="tripleProduct9" type="number" size="1px" value="1">
+                    </p>
+                    <button type="button" 
+                    onclick="tripleProduct([getE('tripleProduct1'), getE('tripleProduct2'), getE('tripleProduct3')], 
+                            [getE('tripleProduct4'), getE('tripleProduct5'), getE('tripleProduct6')],
+                            [getE('tripleProduct7'), getE('tripleProduct8'), getE('tripleProduct9')]);">
+                    Вычислить</button> 
+                    <input id="resTripleProduct" value="" readonly size="1px">
+                </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Подробнее об аналитической геометрии</h2>
+            <p class="flexItems">
+                <img src="img/torMainImg.jpg" alt="torMath" height="90px" width="90px">
+                Аналитическая геометрия, также известная как координатная геометрия, является разделом математики, 
+                который изучает взаимосвязь между геометрическими фигурами и соответствующими им уравнениями в системе координат. 
+                Она позволяет нам представлять геометрические объекты, такие как линии, кривые и поверхности, с помощью алгебраических уравнений, и наоборот.
+            </p>
+            <p>
+                В аналитической геометрии точка на плоскости представлена ее координатами (x, y), где x и y - действительные числа. 
+                Прямая на плоскости определяется уравнением вида Ax + By = C, где A, B и C - константы. 
+                Наклон прямой задается формулой m = (y2 - y1) / (x2 - x1), где (x1, y1) и (x2, y2) - любые две точки на прямой.
+            </p>
+            <p>
+                В трехмерном пространстве точка представлена ее координатами (x, y, z), 
+                а плоскость определяется уравнением вида Ax + By + Cz = D, где A, B, C и D - константы. 
+                Вектор нормали к плоскости задается перекрестным произведением любых двух неколлинеарных векторов, лежащих в плоскости.
+            </p>
+            <p>
+                Аналитическая геометрия имеет множество практических применений в различных областях, таких как физика, инженерия и компьютерная графика. 
+                Она позволяет нам решать задачи, связанные с движением объектов в пространстве, 
+                проектировать конструкции, такие как здания и мосты, и создавать реалистичные изображения и анимацию в компьютерной графике.
+            </p>
+            <p>
+                Таким образом, аналитическая геометрия - это мощный инструмент, 
+                который позволяет нам понять взаимосвязь между геометрическими фигурами и соответствующими им уравнениями в системе координат. 
+                Она предоставляет нам способ представления геометрических объектов с помощью алгебраических уравнений и наоборот, 
+                что делает ее неотъемлемой частью многих областей изучения.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Для пунктов</h2>
+            <p class="test"><b>Какое у вас состояние разума?</b></p>
+            <p class="test"><input name="dzen" type="radio" value="nedzen"> Не дзен</p>
+            <p class="test"><input name="dzen" type="radio" value="dzen"> Дзен</p>
+            <p class="test"><input name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+            <p class="test"><input type="submit" value="Выбрать" onclick="ans()"></p>
+        </div>
+    </div>
+
+    <script>
+
+        function dot(v1, v2)
+        {
+            var ret = 0.0;
+            
+            if (nan(v1) != true && nan(v2) != true)
+            {
+                for (var i = 0; i < v1.length; i++)
+                {
+                    ret += v1[i] * v2[i];
+                }
+            }
+            alert(`${v1[0]}, ${v1[1]}, ${v1[2]}`);
+            alert(`${v2[0]}, ${v2[1]}, ${v2[2]}`);
+            document.getElementById("resDot").value = ret;
+            
+        }
+
+        function cross(v1, v2)
+        {
+            var ret = [0, 0, 0];
+
+            if (nan(v1) != true && nan(v2) != true)
+            {
+                document.getElementById("resCross").value = ret;
+            }
+
+            ret[0] = (v1[1] * v2[2]) - (v1[2] * v2[1]);
+            ret[1] = -1*((v1[0] * v2[2]) - (v1[2] * v2[0]));
+            ret[2] = (v1[0] * v2[1]) - (v1[1] * v2[0]);
+
+            document.getElementById("resCross").value = ret;   
+        }
+
+        function tripleProduct(v1, v2, v3)
+        {
+            var ret = 0.0;
+            alert(`${v1[0]}, ${v1[1]}, ${v1[2]}`);
+            alert(`${v2[0]}, ${v2[1]}, ${v2[2]}`);
+            alert(`${v3[0]}, ${v3[1]}, ${v3[2]}`);
+            if (nan(v1) != true && nan(v2) != true)
+            {
+                ret += v1[0]*(v2[1] * v3[2] - (v3[1] * v2[2])) - v1[1]*(v2[0] * v3[2] - (v3[0] * v2[2])) + v1[2]*(v2[0] * v3[1] - (v3[0] * v2[1]));
+                document.getElementById("resTripleProduct").value = ret;
+            }
+        }
+
+        function ans()
+        {
+            alert(document.querySelector('input[name="dzen"]:checked').value);
+        }
+
+        function nan(v)
+        {
+            for (var i = 0; i < v.length; i++)
+            {
+                if (isNaN(v[i]))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function getE(ident)
+        {
+            return document.getElementById(ident).value;
+        }
+    </script>
+</body>
+</html>
